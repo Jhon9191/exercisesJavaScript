@@ -38,9 +38,10 @@ function valor(){
     console.log(min);
     console.log(isPar);
     
-    document.getElementById("menor").innerHTML = min;
-    document.getElementById("maior").innerHTML = max;
-    document.getElementById("par").innerHTML = isPar;
+    document.getElementById("menor").innerHTML = `Menor número: ${min}`;
+    document.getElementById("maior").innerHTML = `Maior número: ${max}`;
+    document.getElementById("soma").innerHTML = `Soma total: ${total}`;
+    document.getElementById("par").innerHTML = `Existe par? ${isPar == true ? "sim" : "não"}`;
 
     ul = [];
     values = [];

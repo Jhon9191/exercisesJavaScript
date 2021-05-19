@@ -11,16 +11,21 @@
     <div id="container" class="container">  
         <h1>Exercício 1</h1>
        
-        <div>
+        <div class="row">
             <input id="meu-input" placeholder="Digite um número" type="number"></input>
-            <button id="clickMe" type="button"  onclick="doFunction()">Add</button>
+            <button id="clickMe" type="button" onclick="doFunction()">Add</button>
+            <button id="executar" type="button" onclick="valor()">Executar</button>
+            <button id="limpar" type="button" onclick="limpar()">Limpar</button>
         </div>
            
-        <spam class="label" id="menor"></spam>
-        <spam class="label" id="maior"></spam>
-        <spam class="label" id="par"></spam>
+        <table id="table">
+            <td class="label" id="menor">Menor número: </td>
+            <td class="label" id="maior">Maior número: </td>
+            <td class="label" id="soma">Soma total: </td>
+            <td class="label" id="par">Existe par?</td>
+        </table>
 
-        <button id="executar" type="button"  onclick="valor()">Executar</button>
+            
         
         <table id="list">
         </table>
