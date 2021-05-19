@@ -4,7 +4,7 @@ var valorInput = document.getElementById("meu-input");
 // var container = document.getElementById("container").innerHTML;
 document.getElementById("clickMe").onclick = addNumber;
 document.getElementById("executar").onclick = valor;
-
+document.getElementById("limpar").onclick = limpar
 var ul = document.createElement("list").innerHTML;
 
 async function addNumber(){
@@ -17,6 +17,17 @@ async function addNumber(){
         alert("Preencha o campo")
     }
     //document.getElementById("meu-input").value = "";
+}
+
+function limpar(){
+    document.getElementById("menor").innerHTML = `Menor número:`;
+    document.getElementById("maior").innerHTML = `Maior número: `;
+    document.getElementById("soma").innerHTML = `Soma total:`;
+    document.getElementById("par").innerHTML = `Existe par?`;
+
+    ul = [];
+    values = [];
+    document.getElementById("list").innerHTML = ul;
 }
 
 function valor(){
@@ -43,7 +54,4 @@ function valor(){
     document.getElementById("soma").innerHTML = `Soma total: ${total}`;
     document.getElementById("par").innerHTML = `Existe par? ${isPar == true ? "sim" : "não"}`;
 
-    ul = [];
-    values = [];
-    document.getElementById("list").innerHTML = ul;
 }
