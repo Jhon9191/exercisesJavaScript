@@ -3,7 +3,8 @@ var values = [];
 var valorInput = document.getElementById("meu-input");
 // var container = document.getElementById("container").innerHTML;
 document.getElementById("clickMe").onclick = addNumber;
-document.getElementById("media").onclick = valor;
+document.getElementById("executar").onclick = valor;
+
 var ul = document.createElement("list").innerHTML;
 
 async function addNumber(){
@@ -36,9 +37,11 @@ function valor(){
     console.log(max);
     console.log(min);
     console.log(isPar);
+    
+    document.getElementById("menor").innerHTML = min;
+    document.getElementById("maior").innerHTML = max;
+    document.getElementById("par").innerHTML = isPar;
 
-    // container = container +"<h1>"+a+"</h1>";
-    // document.getElementById("container").innerHTML = container;
     ul = [];
     values = [];
     document.getElementById("list").innerHTML = ul;
