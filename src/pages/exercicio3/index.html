@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <title>Exercício 3</title>
+</head>
+<body>
+    
+    <div id="container" class="container">  
+        <h1>Exercício 3</h1>
+       
+        <div class="row">
+            <input id="inputArray" type="text" placeholder="Add into vetor">
+            <button id="clickMe" type="button" onclick="addNumber()">Add</button>
+            <input id="inputString" onkeyup="fixString()" type="text" placeholder="Your text">
+            <button id="executar" type="button" onclick="arrayContains(vetor,inputString.value)">Executar</button>
+            <span id="contido">Esta contido?</span>
+        </div>
+        
+        <h2>Tabela</h2>
+        <table id="list">
+        </table>
+        
+    </div>
+        
+        <script src="./script.js"></script>
+</body>
+</html>
