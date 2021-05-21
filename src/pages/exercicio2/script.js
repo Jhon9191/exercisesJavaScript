@@ -35,6 +35,8 @@ const arrayContains = (vetor, string) => {
     vetor.forEach(element => {
         if(string == element){
             document.getElementById("contido").innerHTML = "Esta contido"
+        }else{
+            document.getElementById("contido").innerHTML = "Não esta contido"
         }
     })
 }
