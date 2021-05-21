@@ -24,6 +24,15 @@
             <input id="inputString" onkeyup="fixString()" type="text" placeholder="Your text">
             <button id="executar" type="button" onclick="arrayContains(vetor,inputString.value)">Executar</button>
         </div>
+
+        <h3>Informe a quantidade de repetições</h3>
+        <div class="row">
+            <input id="valueForRepeats" onkeyup="fixRepeat()" type="number" placeholder="Your number">
+            <button id="repeats" type="button" onclick="arrayContainsTree(vetor,inputString.value,valueForRepeats.value)">Executar</button>
+        </div>
+        
+        <h1 id="tr"></h1>
+
         <span id="contido">Esta contido?</span>
 
 
