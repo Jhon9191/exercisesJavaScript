@@ -50,10 +50,11 @@ input{
 .row{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
 #clickMe{
-    background-color: chartreuse;
+    background-color: rgb(60, 245, 75);
     width: 100px;
     height: 50px;
     border: 0;
@@ -64,7 +65,7 @@ input{
     cursor: pointer;
     transition: all 0.3s;
 }#clickMe:hover{
-    background-color: rgb(111, 211, 11);
+    background-color: rgb(80, 151, 9)
 }
 
 #executar{
@@ -111,14 +112,15 @@ input{
 }
 
 span{
+    margin-top: 5px;
     display: flex;
     color: white;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-color: rgb(155, 60, 245);;
-    padding: 5px;
-    width: 160px;
+    background-color: rgb(60, 245, 75);
+    padding: 10px;
+    width: 500px;
     border-radius: 5px;
     margin-bottom: 5px;
     justify-content: center;

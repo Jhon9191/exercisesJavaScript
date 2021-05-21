@@ -12,14 +12,21 @@
     <div id="container" class="container">  
         <h1>Exercício 3</h1>
        
+
+        <h3>Insira itens no vetor</h3>
         <div class="row">
             <input id="inputArray" type="text" placeholder="Add into vetor">
             <button id="clickMe" type="button" onclick="addNumber()">Add</button>
-            <input id="inputString" onkeyup="fixString()" type="text" placeholder="Your text">
-            <button id="executar" type="button" onclick="arrayContains(vetor,inputString.value)">Executar</button>
-            <span id="contido">Esta contido?</span>
         </div>
         
+        <h3>Informe uma palavra/numero</h3>
+        <div class="row">
+            <input id="inputString" onkeyup="fixString()" type="text" placeholder="Your text">
+            <button id="executar" type="button" onclick="arrayContains(vetor,inputString.value)">Executar</button>
+        </div>
+        <span id="contido">Esta contido?</span>
+
+
         <h2>Tabela</h2>
         <table id="list">
         </table>

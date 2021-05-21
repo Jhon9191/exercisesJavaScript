@@ -25,11 +25,9 @@ const arrayContains = (vetor, string) => {
     let data = vetor.filter((item) => item == string);
     console.log(`data: ${data}`)
 
-    console.log(vetor, string)
-
         if(data.length >=2){
-            document.getElementById("contido").innerHTML = "Esta contido"
+            document.getElementById("contido").innerHTML = "Sim"
         }else{
-            document.getElementById("contido").innerHTML = "Não esta contido"
+            document.getElementById("contido").innerHTML = "Não"
         }
 }
